@@ -12,8 +12,19 @@
   padding: 0;
 }
 
-body {
-  background-color: #222;
+body, nav, footer {
+  /* background-color: #222; */
+  --s: 240px; /* control the size */
+  --c1: #222;
+  --c2: #2a2a2a;
+  
+  --_g:var(--c1) 15%,var(--c2) 0 28%,#0000 0 72%,var(--c2) 0 85%,var(--c1) 0;
+  background:
+      conic-gradient(from 90deg at 2px 2px,#0000 25%,var(--c1) 0) -1px -1px,
+      linear-gradient(-45deg,var(--_g)),linear-gradient(45deg,var(--_g)),
+      conic-gradient(from 90deg at 40% 40%,var(--c1) 25%,var(--c2) 0) 
+      calc(var(--s)/-5) calc(var(--s)/-5);
+  background-size: var(--s) var(--s);
 }
 
 nav ul a,
@@ -70,6 +81,10 @@ footer.page-footer {
   max-width: 90%;
 }
 
+h5 {
+  text-shadow: 1px 1px 1px #222;
+}
+
 #header1 {
-  padding-top: 50px;
+  margin-top: 60px;
 }

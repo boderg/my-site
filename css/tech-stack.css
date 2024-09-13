@@ -1,5 +1,5 @@
-html {
-    --s: 120px; /* control the size */
+body {
+    --s: 240px; /* control the size */
     --c1: #222;
     --c2: #2a2a2a;
     
@@ -24,11 +24,23 @@ h3 {
 }
 
 .icons {
-    padding: 10px 0px;
-    font-size: 3.5em;
+    background-color: #555;
+    transform: rotate(15deg);
+    box-shadow: 0 5px 15px #000;
+    border-radius: 8px;
+    border: 10px solid #03a9f4;
+}
+
+.icons img {
+    -webkit-filter: drop-shadow(5px 10px 10px #000);
+    filter: drop-shadow(5px 5px 5px #000);
+    padding: 30px 5px 5px 5px;
+    width: 150px;
+    height: 150px;
 }
 
 .icons p {
     font-size: 1.5rem;
+    text-align: center;
 }
 
