@@ -1,10 +1,4 @@
-/* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
+/**Custom style sheet**/
 
 * {
   box-sizing: border-box;
@@ -87,4 +81,38 @@ h5 {
 
 #header1 {
   margin-top: 60px;
+}
+
+h5 {
+  padding-bottom: 30px;
+}
+
+.icons {
+  background-color: #555;
+  transform: rotate(15deg);
+  box-shadow: 0 5px 15px #000;
+  border-radius: 8px;
+  border: 10px solid #03a9f4;
+}
+
+.icons img {
+  -webkit-filter: drop-shadow(5px 10px 10px #000);
+  filter: drop-shadow(5px 5px 5px #000);
+  padding: 30px 5px 10px 5px;
+  width: 150px;
+  height: 150px;
+}
+
+.icons p {
+  font-size: 1.5rem;
+  text-align: center;
+  text-shadow: 0 1px 1px #222;
+  padding: 10px 0;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 23px;
+  left: 20px;
 }
