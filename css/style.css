@@ -89,10 +89,21 @@ h5 {
 
 .icons {
   background-color: #444;
-  transform: rotate(15deg);
   box-shadow: 0 5px 15px #000;
   border-radius: 8px;
   border: 10px solid #03a9f4;
+}
+
+.front-end .icons {
+  transform: rotate(15deg);
+}
+
+.back-end .icons {
+  transform: rotate(-15deg);
+}
+
+.dev-ops .icons {
+  transform: rotate(15deg);
 }
 
 .icons img {
@@ -122,6 +133,10 @@ h5 {
   border-radius: 8px;
   box-shadow: 0 5px 15px #000;
   background-color: #444;
+}
+
+.card-content {
+  height: 200px;
 }
 
 .card-title,
