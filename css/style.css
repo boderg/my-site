@@ -6,7 +6,7 @@
   padding: 0;
 }
 
-body, nav, footer {
+body, nav, .sidenav, footer {
   /* background-color: #222; */
   --s: 240px; /* control the size */
   --c1: #222;
@@ -124,8 +124,8 @@ h5 {
 #myBtn {
   display: none;
   position: fixed;
-  bottom: 23px;
-  left: 20px;
+  bottom: 92px;
+  right: 23px;
 }
 
 .card {
@@ -142,4 +142,8 @@ h5 {
 .card-title,
 .card-action a {
   text-shadow: 1px 1px 1px #222;
+}
+
+.material-icons {
+  filter: drop-shadow(5px 10px 10px #000);
 }

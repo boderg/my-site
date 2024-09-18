@@ -23,8 +23,8 @@ function updateClock() {
 
     var period = now.getHours() < 12 ? 'AM' : 'PM';
     // time.innerHTML = hours + ':' + minutes + ':' + seconds + ' ' + period;
-    time.innerHTML = hours + ':' + minutes + ' ' + period;
-    dateTime.innerHTML = dayNames[day] + ' ' + date + ', ' + monthNames[month] + ' ' + year;
+    time.innerHTML = hours + ':' + minutes + ' ' + period + ' ' + ' | ' + ' ' + dayNames[day] + ' ' + date + ', ' + monthNames[month] + ' ' + year;
+    // dateTime.innerHTML = dayNames[day] + ' ' + date + ', ' + monthNames[month] + ' ' + year;
 }
 
 updateClock();
