@@ -147,3 +147,17 @@ h5 {
 .material-icons {
   filter: drop-shadow(5px 10px 10px #000);
 }
+
+.myToast {
+  background-color: #444;
+  border: 10px solid #03a9f4;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px #000;
+}
+
+.myToastError {
+  background-color: #444;
+  border: 10px solid #f44336;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px #000;
+}

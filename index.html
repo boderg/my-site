@@ -13,6 +13,12 @@
 
 	<!-- Scripts -->
 	<script src="https://kit.fontawesome.com/ff8ea5c3d6.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+	<script type="text/javascript">
+		(function () {
+			emailjs.init("NaQTEHzrfG4tno2UZ");
+		})();
+	</script>
 </head>
 
 <body>
@@ -62,7 +68,8 @@
 			<div class="container">
 				<br><br>
 				<div class="row center">
-					<h5 class="header col s12 light amber-text text-accent-2" id="header1">Full Stack Web Application Developer</h5>
+					<h5 class="header col s12 light amber-text text-accent-2" id="header1">Full Stack Web Application
+						Developer</h5>
 				</div>
 				<br><br>
 			</div>
@@ -106,7 +113,8 @@
 		<div class="section no-pad-bot">
 			<div class="container">
 				<div class="row center">
-					<h5 class="header col s12 light amber-text text-accent-2">Visually appealing and modern web sites</h5>
+					<h5 class="header col s12 light amber-text text-accent-2">Visually appealing and modern web sites
+					</h5>
 				</div>
 			</div>
 		</div>
@@ -245,7 +253,8 @@
 										<p class="deep-purple-text text-lighten-1">Bootstrap</p>
 									</div>
 									<div class="col xl2 l3 m6 s12 icons">
-										<a href="#" target="_blank"><img src="assets/icons/materialize-css-icon.svg"></a>
+										<a href="#" target="_blank"><img
+												src="assets/icons/materialize-css-icon.svg"></a>
 										<p class="red-text text-lighten-2">Materialize</p>
 									</div>
 								</div>
@@ -321,7 +330,8 @@
 		<div class="section no-pad-bot">
 			<div class="container">
 				<div class="row center">
-					<h5 class="header col s12 light amber-text text-accent-2">Using modern frameworks and technologies</h5>
+					<h5 class="header col s12 light amber-text text-accent-2">Using modern frameworks and technologies
+					</h5>
 				</div>
 			</div>
 		</div>
@@ -348,7 +358,7 @@
 						<br>
 					</div>
 					<div class="row">
-						<form id="contactForm" class="col s12" method="POST" action="">
+						<form id="contactForm" class="col s12" onsubmit="return sendMail(this);">
 							<div class="row">
 								<div class="input-field col s12 l6 offset-l3">
 									<i class="material-icons prefix deep-orange-text">account_circle</i>
@@ -365,13 +375,20 @@
 										data-success="Valid email entered"></span>
 								</div>
 								<div class="input-field col s12 l6 offset-l3">
-									<i class="material-icons prefix deep-orange-text">mode_edit</i>
+									<i class="material-icons prefix deep-orange-text">subject</i>
+									<input id="subject" type="text" class="validate grey-text" required minlength="3">
+									<label for="subject" class="grey-text">Subject</label>
+									<span class="helper-text" data-error="Please enter the subject of your message"
+										data-success="Valid subject entered"></span>
+								</div>
+								<div class="input-field col s12 l6 offset-l3">
+									<i class="material-icons prefix deep-orange-text">message</i>
 									<textarea id="message" class="materialize-textarea grey-text"></textarea>
 									<label for="message" class="grey-text">Message</label>
 								</div>
 							</div>
-							<button class="btn waves-effect waves-light light-blue grey-text text-darken-4 z-depth-3" type="submit"
-								name="action">Send Message
+							<button class="btn waves-effect waves-light light-blue grey-text text-darken-4 z-depth-3"
+								type="submit" name="action">Send Message
 								<i class="material-icons right">send</i>
 							</button>
 						</form>
@@ -435,7 +452,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<!-- Copyright -->
 		<div class="footer-copyright">
 			<div class="container s-12 m-6 center grey-text">
@@ -472,8 +489,8 @@
 		</ul>
 	</div>
 
-	<a class="btn-floating btn-large waves-effect waves-light amber hide-on-small-only" onclick="topFunction()" id="myBtn"
-		title="Go to top">
+	<a class="btn-floating btn-large waves-effect waves-light amber hide-on-small-only" onclick="topFunction()"
+		id="myBtn" title="Go to top">
 		<i class="material-icons grey-text text-darken-4">arrow_upward</i>
 	</a>
 
