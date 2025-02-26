@@ -24,10 +24,17 @@ body, nav, .sidenav, footer {
 nav ul a,
 nav .brand-logo {
   color: #444;
+  font-size: large;
 }
 
 p {
   line-height: 2rem;
+}
+
+@media only screen and (min-width: 1920px) {
+  p {
+    font-size: large;
+  }
 }
 
 .sidenav-trigger {
@@ -35,7 +42,7 @@ p {
 }
 
 .parallax-container {
-  min-height: 580px;
+  min-height: 680px;
   line-height: 0;
   height: auto;
   color: rgba(255,255,255,.9);
@@ -72,7 +79,7 @@ footer.page-footer {
 }
 
 #boderg-bg {
-  max-width: 90%;
+  max-width: 100%;
 }
 
 h5 {
@@ -114,6 +121,13 @@ h5 {
   height: 150px;
 }
 
+@media only screen and (max-width: 1920px) {
+  .icons img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
 .icons p {
   font-size: 1.5rem;
   text-align: center;
@@ -136,8 +150,10 @@ h5 {
 }
 
 .card-content {
-  height: 200px;
+  height: 250px;
 }
+
+
 
 .card-title,
 .card-action a {
@@ -167,4 +183,10 @@ h5 {
   border: 10px solid #03a9f4;
   border-radius: 8px;
   box-shadow: 0 5px 15px #000;
+}
+
+@media only screen and (max-width: 1920px) {
+  .profile {
+    margin-top: 40px;
+  }
 }
