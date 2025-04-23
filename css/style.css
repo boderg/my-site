@@ -8,9 +8,9 @@
 
 body, nav, .sidenav, footer {
   /* background-color: #222; */
-  --s: 240px; /* control the size */
-  --c1: #222;
-  --c2: #2a2a2a;
+  --s: 10px; /* control the size */
+  --c1: #1b1b1b;
+  --c2: #2b2b2b;
   
   --_g:var(--c1) 15%,var(--c2) 0 28%,#0000 0 72%,var(--c2) 0 85%,var(--c1) 0;
   background:
