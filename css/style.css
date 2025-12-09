@@ -8,15 +8,15 @@
 
 body, nav, .sidenav, footer {
   /* background-color: #222; */
-  --s: 10px; /* control the size */
+  --s: 125px; /* control the size */
   --c1: #1b1b1b;
-  --c2: #2b2b2b;
+  --c2: #2b3b4b;
   
   --_g:var(--c1) 15%,var(--c2) 0 28%,#0000 0 72%,var(--c2) 0 85%,var(--c1) 0;
   background:
       conic-gradient(from 90deg at 2px 2px,#0000 25%,var(--c1) 0) -1px -1px,
       linear-gradient(-45deg,var(--_g)),linear-gradient(45deg,var(--_g)),
-      conic-gradient(from 90deg at 40% 40%,var(--c1) 25%,var(--c2) 0) 
+      conic-gradient(from 90deg at 40% 40%,var(--c1) 25%,var(--c2) 0)
       calc(var(--s)/-5) calc(var(--s)/-5);
   background-size: var(--s) var(--s);
 }
